@@ -60,6 +60,10 @@
   padding: 0 5px;
 }
 
+.grid.grid-cols-12.gap-4.gap-y-8.sm\:gap-8.py-8.md\:py-12 {
+  padding: 0;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
