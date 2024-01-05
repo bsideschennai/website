@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -22,7 +23,7 @@ const metadata = {
 
   <Hero
     actions={[]}
-    image={{ src: '~/assets/images/chennai.svg', alt: 'Chennai', width: 1400, height: 550 }}
+    image={{ src: '~/assets/images/website-hero.svg', alt: 'Chennai', width:3000, height: 800, class: 'hero'}}
   >
     <Fragment slot="title">
     BSides Chennai - 2024
@@ -30,7 +31,7 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">BSides Chennai</span> is a community-led framework for people in chennai who are interested in the world of <span class="font-semibold">Cybersecurity</span>.</span>
+        <span class="font-semibold">BSides Chennai</span> is a community-led framework for people in chennai who are interested in exploring the world of <span class="font-semibold">Cybersecurity</span>.</span>
     </Fragment>
   </Hero>
 
@@ -39,8 +40,8 @@ const metadata = {
   <Features
     id="features"
     tagline=""
-    title="What you can expect at Conference"
-    subtitle="From one of the most professional and collaborative community in Chennai."
+    title="What you can expect at the Conference"
+    subtitle="From one of the most professional and collaborative communities in Chennai."
     items={[
       {
         title: 'Technical Talks',

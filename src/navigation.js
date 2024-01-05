@@ -3,25 +3,25 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Call For Papers',
+      text: `Home`,
+      href: getPermalink("/"),
+    },
+    {
+      text: 'CFP',
       href: getPermalink("/cfp"),
     },
     {
-      text: 'Events',
-      href: getPermalink("/comingsoon"),
-    },
-    {
       text: 'Sponsors',
-      href: getPermalink("/comingsoon"),
+      href: getPermalink("/sponsors"),
     },
     {
       text: 'Contact',
       href: getPermalink("/contact"),
     },
-    {
-      text: 'The TEAM',
-      href: getPermalink("/comingsoon"),
-    }
+    // {
+    //   text: 'Team',
+    //   href: getPermalink("/team"),
+    // }
   ],
   actions: [],
 };
