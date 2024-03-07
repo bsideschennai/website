@@ -1,0 +1,80 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Person from '~/components/widgets/Person.astro';
+
+const metadata = {
+  title: 'Panelists',
+};
+
+const isDark = false;
+---
+
+<Layout metadata={metadata}>
+    <HeroText tagline="" title="CEO Panelists" />
+    <article class="mb-2 transition text-center">
+    <p></p> 
+    </article>
+    <div class="flex flex-wrap flex-col lg:flex-row lg:px-20" style="">
+      <Person
+        photoPath = "~/assets/images/sudhakar-ad.jpg"
+        socialLinks = {[
+          {
+              text: "LinkedIn",
+              href: "https://www.linkedin.com/in/sudhakar-kathirvel-44573865",
+              ariaLabel: "string",
+              icon: "tabler:brand-linkedin"
+          },
+        ]},
+        name = 'Sudhakar Kathirvel',
+        title = 'CEO - Vault Infosec',
+      />
+      
+    </div>
+
+    <HeroText tagline="" title="CISO Panelists" />
+    <article class="mb-2 transition text-center">
+    <p></p> 
+    </article>
+    <div class="flex flex-wrap flex-col lg:flex-row lg:px-20" style="">
+      <Person
+        photoPath = "~/assets/images/arulselvar-ad.jpg"
+        socialLinks = {[
+          {
+              text: "LinkedIn",
+              href: "https://www.linkedin.com/in/arulselvar",
+              ariaLabel: "string",
+              icon: "tabler:brand-linkedin"
+          },
+        ]},
+        name = 'Arulselvar Thomas',
+        title = 'Founder and Director - Briskinfosec',
+      />
+      <Person
+        photoPath = "~/assets/images/ski-ad.jpeg"
+        socialLinks = {[
+          {
+              text: "LinkedIn",
+              href: "https://in.linkedin.com/in/iamski",
+              ariaLabel: "string",
+              icon: "tabler:brand-linkedin"
+          },
+        ]},
+        name = 'Senthil Kumar Iyappan (SKI)',
+        title = 'CISO - Ocrolus',
+      />
+      <Person
+        photoPath = "~/assets/images/velayutham-ad.png"
+        socialLinks = {[
+          {
+              text: "LinkedIn",
+              href: "https://www.linkedin.com/in/velayuthamselvaraj",
+              ariaLabel: "string",
+              icon: "tabler:brand-linkedin"
+          },
+        ]},
+        name = 'Velayutham Selvaraj',
+        title = 'Founder & CISO - Twintech Solutions',
+      />
+  </div>
+</Layout>
