@@ -21,6 +21,10 @@ export const headerData = {
     {
       text: 'Team',
       href: getPermalink("/team"),
+    },
+    {
+      text: 'CXO Panel',
+      href: getPermalink("/cxo-panel"),
     }
   ],
   actions: [],
